@@ -67,7 +67,10 @@ console.log(gasolineAutos, dieselAutos, remainingAutos);
 getAutos(gasolineAutos);
 getAutos(dieselAutos);
 getAutos(remainingAutos);
-
+/**
+ * Takes an array of objects and generate HTML for every object
+ * @param {object} array array of objects
+ */
 function getAutos(array){
     array.forEach(element => {
         let liEl = document.createElement('li');
