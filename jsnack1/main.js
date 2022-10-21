@@ -72,9 +72,12 @@ getAutos(remainingAutos);
  * @param {object} array array of objects
  */
 function getAutos(array){
+    let boxEl = document.createElement('ul');
+    boxEl.classList.add('box');
     array.forEach(element => {
         let liEl = document.createElement('li');
         liEl.append(element.marca + ' ' + element.modello + ' ' + element.alimentazione);
-        container.append(liEl);
+        boxEl.append(liEl);
     });
+    container.append(boxEl);
 }
